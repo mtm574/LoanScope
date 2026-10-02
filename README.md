@@ -1,16 +1,27 @@
-# React + Vite
+HI TIRIAN, here is the info on how to run this (though I am sure you prob already know how :>)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+BEFORE RUNNING:
+Make sure you have the following installed
+  -Node.js
+  -npm
+  -a WEB browser
 
-Currently, two official plugins are available:
+INSTALLATION:
+  1. Clone the REPO (git clone https://github.com/mtm574/LoanScope.git)
+  2. Open the project folder (cd LoanScope)
+  3. Install project dependencies (npm install)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+RUNNING LOANSCOPE:
+LoanScope requires both the front and backend to be running in order for it to function :>
+  1. Start the backend
+        -open terminal and run "node server/server.js" (Should start at https://localhost:3001 with a message in terminal saying it is running)
+  2. Start the frontend
+        -With a second terminal, run "npm run dev" OR "npm.cmd run dev" if powershell gives you an issue.
+        -Vite will provide a URL (Something like https://localhost:5173), you can paste that in the browser
 
-## React Compiler
+*If everything functioned correctly, you should be able to see the webpage in yoru browser. 
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+POSSIBLE ERROR:
+  -If you are given the message "Could nawt connect to backend <_<"
+      -Go back to the first terminal, where you ran "node server/server.js" and ensure that it still shows "LoanScope is running on http://localhost:3001"
+       if it does not, enter "node server/server.js" again. Do not exit/quit the process.
